@@ -1,0 +1,213 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --couleur-principale: #1b2a41;
+    --couleur-fonce: #1b2a41;
+    --couleur-fond: #f8f9fa;
+    --espace: 1rem;
+}
+
+body {
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--couleur-fonce);
+    background-color: var(--couleur-fond);
+    
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--couleur-principale);
+    outline-offset: 2px;
+}
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--espace);
+    padding: var(--espace) 2rem;
+    background-color: var(--couleur-principale);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    border-style: groove;
+}
+
+nav ul {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#accueil {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem var(--espace);
+    background-color: var(--couleur-fonce);
+    color: white;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--couleur-principale);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.bouton:hover {
+    background-color: #0b5ed7
+}
+
+ 
+#projets {
+    padding: 2rem var(--espace);
+}
+
+.grille-projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.grille-projets article {
+    padding: var(--espace);
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.grille-projets img {
+    max-width: 100%;
+    height: auto;
+}  
+
+
+.liste-competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.liste-competences li {
+    padding: 0.4rem 0.9rem;
+    background-color: var(--couleur-principale);
+    color: white;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+#form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 500px;
+}
+
+#form-contact label {
+    font-weight: bold;
+}
+
+#form-contact input,
+#form-contact textarea {
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font: inherit;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--couleur-fonce);
+    color: white;
+}
+
+
+
+
+#apropos {
+    padding: 2rem;
+    background-color: blanchedalmond;
+}
+
+
+#apropos h2 {
+    color: #1b2a41;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+#apropos img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+
+#apropos p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #1b2a41;
+    max-width: 700px;
+    margin: 0 auto;
+   
+   
+
+    background-color: #1b2a41;
+    color:white; 
+    padding: 50px 20px;}
+
+    #contact {
+    background-color: blanchedalmond;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 500px;
+}
